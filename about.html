@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Sweet Bliss Cakes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #fffaf9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffb6c1;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 1.8em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1541976076758-347942db197a?auto=format&fit=crop&w=1500&q=80')
+        no-repeat center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: relative;
+      text-align: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    section {
+      padding: 60px 10%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.2em;
+      margin-bottom: 25px;
+      color: #ff69b4;
+    }
+
+    .story {
+      max-width: 900px;
+      margin: 0 auto 60px;
+      font-size: 1.1em;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .team-member {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-member img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .team-member h3 {
+      margin-top: 15px;
+      color: #ff69b4;
+    }
+
+    .team-member p {
+      padding: 10px 15px 20px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      background: #ffb6c1;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2em;
+      }
+      nav a {
+        margin: 0 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sweet Bliss Cakes</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="index.html#products">Cakes</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>About Sweet Bliss Cakes</h2>
+      <p>Where every cake tells a story of love, flavor, and creativity.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Our Story</h2>
+    <div class="story">
+      <p>Sweet Bliss Cakes began as a small family kitchen passion in 2015, born from a love for baking and a desire to spread joy through desserts. Over the years, we’ve grown into a full-service cake studio known for our handcrafted, custom-designed creations that make every occasion extra special.</p>
+      <br>
+      <p>We believe that a cake should be more than just dessert — it should be an experience. From the first consultation to the final decoration, every step is made with care, creativity, and a sprinkle of love. Our mission is simple: to make your sweetest moments unforgettable.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Meet Our Team</h2>
+    <div class="team">
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1616627458516-44c8aeb4e6aa?auto=format&fit=crop&w=700&q=80" alt="Baker">
+        <h3>Amira Hasan</h3>
+        <p>Founder & Head Baker — Amira’s artistry and attention to detail bring every cake vision to life with perfection.</p>
+      </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&w=700&q=80" alt="Decorator">
+        <h3>Rafi Khan</h3>
+        <p>Lead Designer — Known for his creative flair, Rafi specializes in elegant and imaginative cake designs.</p>
+      </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1603415526960-f7e0328a3ed9?auto=format&fit=crop&w=700&q=80" alt="Manager">
+        <h3>Leila Rahman</h3>
+        <p>Operations Manager — Leila ensures every order runs smoothly, from kitchen to customer delight.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Sweet Bliss Cakes | Crafted with love 🍰
+  </footer>
+
+</body>
+</html>
